@@ -27,7 +27,7 @@ const AddAddressScreen = () => {
 	const fetchAddresses = async () => {
 		try {
 			const response = await axios.get(
-				`https://ecom-dummy.onrender.com/addresses/${userId}`
+				`https://ecommerce-app-latest.onrender.com/addresses/${userId}`
 			);
 			const { addresses } = response.data;
 

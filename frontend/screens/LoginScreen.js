@@ -42,7 +42,7 @@ const LoginScreen = () => {
 		};
 
 		axios
-			.post('https://ecom-dummy.onrender.com/login', user)
+			.post('https://ecommerce-app-latest.onrender.com/login', user)
 			.then((response) => {
 				console.log(response);
 				const token = response.data.token;

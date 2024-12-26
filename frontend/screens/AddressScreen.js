@@ -47,7 +47,7 @@ const AddressScreen = () => {
 		};
 
 		axios
-			.post('https://ecom-dummy.onrender.com/addresses', {
+			.post('https://ecommerce-app-latest.onrender.com/addresses', {
 				userId,
 				address,
 			})

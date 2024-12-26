@@ -31,7 +31,7 @@ const RegisterScreen = () => {
 
 		// send a POST  request to the backend API to register the user
 		axios
-			.post('https://ecom-dummy.onrender.com/register', user)
+			.post('https://ecommerce-app-latest.onrender.com/register', user)
 			.then((response) => {
 				console.log(response);
 				Alert.alert(

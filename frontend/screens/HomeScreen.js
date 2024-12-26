@@ -238,7 +238,7 @@ const HomeScreen = () => {
 	const fetchAddresses = async () => {
 		try {
 			const response = await axios.get(
-				`https://ecom-dummy.onrender.com/addresses/${userId}` //10.0.2.2
+				`https://ecommerce-app-latest.onrender.com/addresses/${userId}` //10.0.2.2
 			);
 			const { addresses } = response.data;
 

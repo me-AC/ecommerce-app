@@ -37,7 +37,7 @@ const ConfirmationScreen = () => {
 	const fetchAddresses = async () => {
 		try {
 			const response = await axios.get(
-				`https://ecom-dummy.onrender.com/addresses/${userId}`
+				`https://ecommerce-app-latest.onrender.com/addresses/${userId}`
 			);
 			const { addresses } = response.data;
 
@@ -61,7 +61,7 @@ const ConfirmationScreen = () => {
 			};
 
 			const response = await axios.post(
-				'https://ecom-dummy.onrender.com/orders',
+				'https://ecommerce-app-latest.onrender.com/orders',
 				orderData
 			);
 			if (response.status === 200) {
@@ -104,7 +104,7 @@ const ConfirmationScreen = () => {
 			};
 
 			const response = await axios.post(
-				'https://ecom-dummy.onrender.com/orders',
+				'https://ecommerce-app-latest.onrender.com/orders',
 				orderData
 			);
 			if (response.status === 200) {
