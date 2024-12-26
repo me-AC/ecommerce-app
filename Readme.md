@@ -13,21 +13,18 @@ The backend API is built with Node.js and Express. It provides endpoints for:
 
 ### API Endpoints
 
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login a user
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get a single product by ID
-- `POST /api/products` - Create a new product
-- `PUT /api/products/:id` - Update a product by ID
-- `DELETE /api/products/:id` - Delete a product by ID
-- `GET /api/cart` - Get the current user's cart
-- `POST /api/cart` - Add an item to the cart
-- `DELETE /api/cart/:id` - Remove an item from the cart
-- `POST /api/orders` - Create a new order
+- `POST /api/register` - Register a new user
+- `POST /api/login` - Login a user
+- `GET /api/verify/:token` - Verify a user's email
+- `GET /api/profile/:userId` - Get user profile by ID
+- `POST /api/addresses` - Store a new address for the current user
+- `GET /api/addresses/:id` - Retrieve all addresses for the current user
+- `POST /api/orders` - Store all orders to backend
+- `GET /api/orders/:userId` - Get all orders of user by ID
 
 ## Frontend
 
-The frontend is built with React and provides a user-friendly interface for interacting with the API. It includes:
+The frontend is built with React Native and provides a user-friendly interface for interacting with the API. It includes:
 
 - User registration and login forms
 - Product listing and detail pages
@@ -43,7 +40,8 @@ The frontend is built with React and provides a user-friendly interface for inte
 
 ## Deployment
 
-The application is deployed on [Render.com](https://render.com).
+The backend application is deployed on [Render.com](https://render.com).
+[API Url](https://ecommerce-app-latest.onrender.com)
 
 ## Getting Started
 
@@ -62,7 +60,9 @@ To get a local copy up and running, follow these steps:
    ```
 2. Install NPM packages
    ```sh
-   cd ecommerce-app
+   cd ecommerce-app/frontend
+   npm install
+   cd ../api
    npm install
    ```
 
@@ -70,13 +70,13 @@ To get a local copy up and running, follow these steps:
 
 1. Start the backend server
    ```sh
-   cd backend
+   cd api
    npm start
    ```
-2. Start the frontend server
+2. Start the frontend server for react ntive
    ```sh
    cd frontend
-   npm start
+   npx expo start
    ```
 
 ## Contributing
