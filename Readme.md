@@ -73,7 +73,7 @@ To get a local copy up and running, follow these steps:
    cd api
    npm start
    ```
-2. Start the frontend server for react ntive
+2. Start the frontend server for react native
    ```sh
    cd frontend
    npx expo start
